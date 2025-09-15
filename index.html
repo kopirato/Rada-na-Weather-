@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Selian Weather • Live Forecast</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/weather-icon.svg" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/weather-icon.svg" alt="logo" class="logo">
+      <h1>Selian Weather</h1>
+    </div>
+    <p class="tag">Fast, simple weather — powered by OpenWeather</p>
+  </header>
+
+  <main class="main">
+    <section class="card search-card">
+      <div class="search-row">
+        <input id="cityInput" placeholder="Enter city name (e.g. Nairobi)" autocomplete="off" />
+        <button id="searchBtn">Check</button>
+      </div>
+      <div class="hint">Tip: Try city names with country when ambiguous (e.g. Paris, FR)</div>
+    </section>
+
+    <section class="card result-card" id="result" aria-live="polite">
+      <div class="placeholder">
+        <img src="assets/empty-illustration.svg" alt="empty" />
+        <p>Search for a city to see current weather</p>
+      </div>
+    </section>
+
+    <section class="card extras">
+      <h3>Quick cities</h3>
+      <div class="chips">
+        <button class="chip">Nairobi</button>
+        <button class="chip">London</button>
+        <button class="chip">New York</button>
+        <button class="chip">Tokyo</button>
+        <button class="chip">Sydney</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Made with ❤️ by Selian • Data from OpenWeather</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
